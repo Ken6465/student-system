@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications and Alerts - School Attendance System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-header {
+            background: linear-gradient(to right, #4e73df, #224abe);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #4e73df;
+            border-color: #4e73df;
+        }
+
+        .btn-primary:hover {
+            background-color: #3a5cb3;
+            border-color: #3a5cb3;
+        }
+
+        .notification {
+            display: flex;
+            align-items: center;
+        }
+
+        .notification-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+            color: #4e73df;
+        }
+
+        .notification .btn {
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="dashboard.html">School Attendance System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin_dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="student_profiles.html">Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="attendance_tracking.html">Attendance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="class_scheduling.html">Schedules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reports_and_analytics.html">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="notifications_and_alerts.html">Notifications</a>
+                        </li>
+                        <!-- Logout Button -->
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-danger text-white" href="admin_logout.html">Logout</a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Notifications and Alerts</h1>
+            <p class="lead">Stay updated with important information and alerts.</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="mb-4">Recent Notifications</h3>
+            <div class="row g-4">
+                <!-- Notification Card -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body notification">
+                            <i class="bi bi-exclamation-circle-fill notification-icon"></i>
+                            <div>
+                                <h5 class="card-title">Class Rescheduled</h5>
+                                <p class="card-text">Class A's Mathematics lecture has been rescheduled to 10:00 AM on
+                                    Monday.</p>
+                                <button class="btn btn-sm btn-primary">Acknowledge</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Notification Card -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body notification">
+                            <i class="bi bi-calendar-check-fill notification-icon"></i>
+                            <div>
+                                <h5 class="card-title">Attendance Reminder</h5>
+                                <p class="card-text">Don't forget to mark attendance for Class B today!</p>
+                                <button class="btn btn-sm btn-primary">Mark Attendance</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Notification Card -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body notification">
+                            <i class="bi bi-info-circle-fill notification-icon"></i>
+                            <div>
+                                <h5 class="card-title">System Update</h5>
+                                <p class="card-text">The attendance system will undergo maintenance this Sunday from
+                                    2:00 PM to 4:00 PM.</p>
+                                <button class="btn btn-sm btn-primary">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Notification Card -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body notification">
+                            <i class="bi bi-person-fill-check notification-icon"></i>
+                            <div>
+                                <h5 class="card-title">Student Achievement</h5>
+                                <p class="card-text">Congratulations to John Doe for perfect attendance this month!</p>
+                                <button class="btn btn-sm btn-primary">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 School Attendance System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+
+</html>

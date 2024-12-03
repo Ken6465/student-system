@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - School Attendance System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fc;
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-header {
+            background: linear-gradient(to right, #4e73df, #224abe);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .notification-card {
+            border-left: 5px solid;
+            border-radius: 0;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+        }
+
+        .notification-card.info {
+            border-color: #36b9cc;
+            background-color: #f0f8ff;
+        }
+
+        .notification-card.warning {
+            border-color: #f6c23e;
+            background-color: #fffaf0;
+        }
+
+        .notification-card.success {
+            border-color: #1cc88a;
+            background-color: #f0fff5;
+        }
+
+        .notification-card.danger {
+            border-color: #e74a3b;
+            background-color: #fff5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="dashboard.html">School Attendance System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="user_dashboard.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user_profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="user_notifications.html">Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="user_reports.html">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="user_logout.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Notifications</h1>
+            <p class="lead">Stay updated with the latest alerts and reminders.</p>
+        </div>
+    </section>
+
+    <!-- Notifications Section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Example Notifications -->
+            <div class="notification-card info">
+                <strong>Information:</strong> Today’s class schedule has been updated. Please check your timetable.
+            </div>
+            <div class="notification-card warning">
+                <strong>Reminder:</strong> Attendance for this week’s classes must be submitted by Friday.
+            </div>
+            <div class="notification-card success">
+                <strong>Success:</strong> Your attendance report for October has been generated successfully.
+            </div>
+            <div class="notification-card danger">
+                <strong>Alert:</strong> Your profile update could not be saved. Please try again.
+            </div>
+            <div class="notification-card info">
+                <strong>Information:</strong> New materials have been uploaded for your class.
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 School Attendance System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
